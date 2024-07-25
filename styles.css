@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo personalizado para o select */
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none; /* Remove a aparÃªncia padrÃ£o do sistema */
+    -webkit-appearance: none; /* Para compatibilidade com navegadores WebKit (Safari, Chrome) */
+    background-color: #f8f8f8; /* Cor de fundo do select */
+    background-image: url('arrow-down.png'); /* Ãcone de seta para baixo */
+    background-position: calc(100% - 10px) center; /* PosiÃ§Ã£o do Ã­cone de seta */
+    background-repeat: no-repeat; /* Evita repetiÃ§Ã£o do Ã­cone */
+    cursor: pointer;
+}
+
+.input-group select:hover {
+    border-color: #999; /* Cor da borda ao passar o mouse */
+}
+
+.input-group select:focus {
+    outline: none; /* Remove a borda de foco padrÃ£o */
+    border-color: #66afe9; /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Sombra ao focar */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e11010;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c01313;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result h2 {
+    text-align: center;
+}
+
+.table-container {
+    margin-top: 20px;
+    max-height: 300px; /* Limita a altura da planilha */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 7px;
+    border: 1px solid #a51f1f;
+    text-align: center;
+    font-size: 13px;
+}
+
+thead {
+    background-color: #ec1111;
+    color: white;
+}
